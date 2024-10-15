@@ -2,10 +2,10 @@
 title: Hexo로 개인 블로그 만들기 (1)
 date: 2024/10/10 10:03:12
 categories: [블로그만들기]
-tags: [Hexo, Blog, Themes]
+tags: [Hexo, Blog, Themes, GitHub, GitHub Actions, Github Pages, workflows]
 ---
 
-본 포스팅에서는 Hexo 설치 부터 테마 적용, GitHub Pages 배포 까지 진행하겠습니다.
+본 포스팅에서는 Hexo 설치 부터 테마 적용, GitHub Pages 배포 까지 진행합니다.<br>
 
 ## Hexo 설치
 
@@ -13,7 +13,7 @@ tags: [Hexo, Blog, Themes]
 <br>
 아래는 사용한 버전입니다.
 `node: 20.16.0` `npm: 10.8.1`
-![](/images/2024-10-10/nodenpm.png)
+![](/images/2024-10-10/nodenpm.png)<br><br>
 
 node 설치가 완료되면, 사용하고자 하는 폴더에서 Hexo 설치 합니다.
 
