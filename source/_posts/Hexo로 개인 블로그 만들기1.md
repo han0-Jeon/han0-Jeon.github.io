@@ -1,7 +1,8 @@
 ---
 title: Hexo로 개인 블로그 만들기 (1)
 date: 2024/10/10 10:03:12
-categories: 블로그만들기
+categories: [블로그만들기]
+tags: [Hexo, Blog, Themes]
 ---
 
 본 포스팅에서는 Hexo 설치 부터 테마 적용, GitHub Pages 배포 까지 진행하겠습니다.
@@ -98,7 +99,7 @@ $ hexo generate; hexo server;
 
 우선, GitHub Pages에 배포할 것이기 때문에 레포를 만들어줍니다.
 레포 이름은 `(github아이디).github.io` 으로 합니다.
-![](/images/2024-10-10/githubrepo.png)
+![](/images/2024-10-10/githubrepo.png)<br>
 
 생성이 완료 되었으면, `Settings -> Pages`로 들어가서 Build and Deployment를 GitHub Actions 로 변경해줍니다.
 ![](/images/2024-10-10/githubaction.png)<br>
@@ -182,14 +183,14 @@ jobs:
 
 <br>
 
-그리고, 저는 기본 테마를 변경해주기 위해 아래와 같이 수정했습니다.
-![](/images/2024-10-10/scheme.png)
+그리고, 기본 테마를 변경해주기 위해 아래와 같이 수정했습니다.
+![](/images/2024-10-10/scheme.png)<br>
 
 이후 `soruce/_posts/` 에 새로운 md 파일을 만들어줍니다. (새로운 게시물)
-![](/images/2024-10-10/firstpost.png)
+![](/images/2024-10-10/firstpost.png)<br>
 
 완료 후, push를 하면 아래와 같이 정상적으로 배포가 된 것을 확인할 수 있습니다.
-![](/images/2024-10-10/workflowhexo.png)
+![](/images/2024-10-10/workflowhexo.png)<br>
 
 이상 끝 -!
 <br>

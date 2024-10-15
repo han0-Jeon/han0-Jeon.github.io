@@ -3,10 +3,10 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle: ""
-description: ""
-keywords:
+title: JHan Blog
+subtitle: "Development and TIL"
+description: "블로그를 만들어보았습니다."
+keywords: dev, frontend, til, blog
 author: JHan
 language: en
 timezone: ""
@@ -102,3 +102,11 @@ theme: next
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: ""
+
+# Local Search
+# search
+search:
+  path: search.xml
+  field: post
+  content: true
+  format: html
