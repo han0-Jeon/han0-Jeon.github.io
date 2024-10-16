@@ -706,7 +706,7 @@ livere_uid: # <your_uid>
 gitalk:
   enable: true
   github_id: han0-Jeon
-  repo: han0-Jeon/gitalk
+  repo: han0-Jeon.github.io
   client_id: Ov23limCNbVP90qmy7nh
   client_secret: c89b6e61773bfa6c5a86f3bf29224eedfeae6d2a
   # admin_user: han0-Jeon
