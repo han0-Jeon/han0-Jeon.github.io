@@ -8,7 +8,8 @@
     </header>
     <div class="post-body">
       {% if site.posts.length > 0 %}
-        {% for post in site.posts.toArray() %}
+      {% set sorted_posts = site.posts.toArray() | sort(attribute='date') | reverse %}
+        {% for post in sorted_posts %}
           <article class="post-item">
             <div class="post-item-content">
               <h2 class="post-item-title">
