@@ -3,12 +3,13 @@
 }
 
 .all-post {
-  border-bottom: 1px solid #999; /* 얇고 연한 구분선 */
+  border-bottom: 1px solid #999;
 }
 
 .post-title {
   margin-bottom: 50px;
 }
+
 .post-item {
   display: flex;
   justify-content: space-between;
@@ -22,8 +23,8 @@
 }
 
 .post-thumbnail-img {
-  width: 150px; /* Adjust as needed */
-  height: 100px; /* Maintain aspect ratio if necessary */
+  width: 150px;
+  height: 100px;
   object-fit: cover;
   border-radius: 4px;
 }
@@ -55,14 +56,16 @@
   color: #999;
   margin-top: 40px;
 }
+
 .post-item-date-text {
   margin-right: 10px;
 }
+
 .post-item-tags {
-  display: flex; /* 추가 */
+  display: flex;
   flex-shrink: 0;
   margin-left: 20px;
-  width: 30%; /* Adjust this value as needed */
+  width: 30%;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -80,4 +83,64 @@
 
 .post-item-categories a {
   border: none !important;
+}
+
+/* 모바일 반응형 스타일 */
+@media screen and (max-width: 768px) {
+  .post-item {
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+
+  .post-item-thumbnail {
+    margin-right: 0;
+    margin-bottom: 15px;
+    width: 100%;
+  }
+
+  .post-thumbnail-img {
+    width: 100%;
+    height: 200px;
+  }
+
+  .post-item-content {
+    max-width: 100%;
+  }
+
+  .post-item-title {
+    font-size: 1.1em;
+    white-space: normal;
+    line-height: 1.4;
+  }
+
+  .post-item-date {
+    margin-top: 20px;
+  }
+
+  .post-item-tags {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    white-space: normal;
+  }
+
+  .post-item-tags a {
+    margin-bottom: 5px;
+  }
+}
+
+/* 작은 모바일 화면용 추가 스타일 */
+@media screen and (max-width: 480px) {
+  .post-thumbnail-img {
+    height: 160px;
+  }
+
+  .post-item-title {
+    font-size: 1em;
+  }
+
+  .post-item-date {
+    font-size: 0.75em;
+  }
 }
