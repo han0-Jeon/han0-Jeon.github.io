@@ -3,6 +3,7 @@ title: Hexo로 개인 블로그 만들기 (1)
 date: 2024/10/10 10:03:12
 categories: [블로그만들기]
 tags: [Hexo, Blog, Themes, GitHub, GitHub Actions, Github Pages, workflows]
+thumbnail: /images/2024/10/10/firsthexo.png
 ---
 
 본 포스팅에서는 Hexo 설치 부터 테마 적용, GitHub Pages 배포 까지 진행합니다.<br>
@@ -13,7 +14,7 @@ tags: [Hexo, Blog, Themes, GitHub, GitHub Actions, Github Pages, workflows]
 <br>
 아래는 사용한 버전입니다.
 `node: 20.16.0` `npm: 10.8.1`
-![](/images/2024-10-10/nodenpm.png)<br><br>
+![](/images/2024/10/10/nodenpm.png)<br><br>
 
 node 설치가 완료되면, 사용하고자 하는 폴더에서 Hexo 설치 합니다.
 
@@ -28,7 +29,7 @@ $ npm install -g hexo-cli
 $ hexo init (디렉토리 명)
 ```
 
-![](/images/2024-10-10/hexoinit.png)
+![](/images/2024/10/10/hexoinit.png)
 <br>
 
 이후 생성된 폴더로 이동해서 필요한 패키지들을 설치합니다.
@@ -48,7 +49,7 @@ $ hexo clean; hexo generate; hexo server;
 <br>
 
 정상적으로 설치 되었다면, `localhost:4000`접속 시 아래와 같은 화면이 나타납니다.
-![](/images/2024-10-10/firsthexo.png)
+![](/images/2024/10/10/firsthexo.png)
 <br>
 
 ## Hexo 테마 적용
@@ -90,7 +91,7 @@ theme 를 next로 변경해줍니다.
 $ hexo generate; hexo server;
 ```
 
-![](/images/2024-10-10/nexthexo.png)
+![](/images/2024/10/10/nexthexo.png)
 <br>
 
 ## GitHub Pages 배포
@@ -99,10 +100,10 @@ $ hexo generate; hexo server;
 
 우선, GitHub Pages에 배포할 것이기 때문에 레포를 만들어줍니다.
 레포 이름은 `(github아이디).github.io` 으로 합니다.
-![](/images/2024-10-10/githubrepo.png)<br>
+![](/images/2024/10/10/githubrepo.png)<br>
 
 생성이 완료 되었으면, `Settings -> Pages`로 들어가서 Build and Deployment를 GitHub Actions 로 변경해줍니다.
-![](/images/2024-10-10/githubaction.png)<br>
+![](/images/2024/10/10/githubaction.png)<br>
 
 VSCode를 열고 터미널에 아래 명령어를 입력해서 로컬 저장소와 git 레포를 연결합니다.
 
@@ -184,13 +185,13 @@ jobs:
 <br>
 
 그리고, 기본 테마를 변경해주기 위해 아래와 같이 수정했습니다.
-![](/images/2024-10-10/scheme.png)<br>
+![](/images/2024/10/10/scheme.png)<br>
 
 이후 `soruce/_posts/` 에 새로운 md 파일을 만들어줍니다. (새로운 게시물)
-![](/images/2024-10-10/firstpost.png)<br>
+![](/images/2024/10/10/firstpost.png)<br>
 
 완료 후, push를 하면 아래와 같이 정상적으로 배포가 된 것을 확인할 수 있습니다.
-![](/images/2024-10-10/workflowhexo.png)<br>
+![](/images/2024/10/10/workflowhexo.png)<br>
 
 이상 끝 -!
 <br>

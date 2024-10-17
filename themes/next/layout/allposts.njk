@@ -11,6 +11,15 @@
       {% set sorted_posts = site.posts.toArray() | sort(attribute='date') | reverse %}
         {% for post in sorted_posts %}
           <article class="post-item">
+            <div class="post-item-thumbnail">
+               <a href="{{ url_for(post.path) }}" itemprop="url">
+              {% if post.thumbnail %}
+                <img src="{{ post.thumbnail }}" alt="{{ post.title }}" class="post-thumbnail-img">
+              {% else %}
+                <img src="/images/defalut-thumbnail.png" alt="default-thumbnail" class="post-thumbnail-img">
+              {% endif %}
+               </a>
+            </div>
             <div class="post-item-content">
               <h2 class="post-item-title">
                 <a href="{{ url_for(post.path) }}" itemprop="url">

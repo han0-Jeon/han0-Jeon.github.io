@@ -16,6 +16,18 @@
   margin-bottom: 30px;
 }
 
+.post-item-thumbnail {
+  flex-shrink: 0;
+  margin-right: 15px;
+}
+
+.post-thumbnail-img {
+  width: 150px; /* Adjust as needed */
+  height: 100px; /* Maintain aspect ratio if necessary */
+  object-fit: cover;
+  border-radius: 4px;
+}
+
 .post-item-content {
   flex-grow: 1;
   max-width: 70%;
@@ -41,7 +53,7 @@
 .post-item-date {
   font-size: 0.8em;
   color: #999;
-  margin-top: 5px;
+  margin-top: 40px;
 }
 .post-item-date-text {
   margin-right: 10px;

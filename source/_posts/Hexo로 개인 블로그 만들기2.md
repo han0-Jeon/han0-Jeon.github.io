@@ -3,13 +3,14 @@ title: Hexo로 개인 블로그 만들기 (2) - 커스터마이징
 date: 2024/10/16 15:03:12
 categories: [블로그만들기]
 tags: [Hexo, Blog, Themes, GitHub, GitHub Actions, Github Pages, workflows]
+thumbnail: /images/2024/10/16/layout.png
 ---
 
 ## 커스터 마이징 준비
 
 모든 게시물들을 스크롤로 간략하게(제목, 섬네일) 보여줄 수 있는 기능이 있었으면 좋겠다고 생각했다. (티스토리 or 벨로그 같이)<br><br>
 
-![](/images/2024-10-16/custom.png)
+![](/images/2024/10/16/custom.png)
 next 공식 문서에서 커스터마이징 방법을 제공하긴 했지만, `source/\_data`폴더를 사용해서 `head, header, footer, post-body ..` 등등 매우 제한적 이었고 내가 원하는 건 이게 아니었다.
 
 우선 내가 원하는 대로 커스터마이징을 하려면 `node_moudules` 를 건드려야 했다. _(npm으로 설치했기 때문)_
@@ -26,7 +27,7 @@ next 공식 문서에서 커스터마이징 방법을 제공하긴 했지만, `s
 git clone https://github.com/next-theme/hexo-theme-next themes/next
 ```
 
-![](/images/2024-10-16/gitclone.png)
+![](/images/2024/10/16/gitclone.png)
 
 5. `.git` 파일 삭제 _(딱히 필요없음)_
 6. 푸쉬(재배포) 후 문제 없는 것 확인
@@ -85,25 +86,25 @@ allposts_dir: allposts
 이후 아까 클론한 `themes` 폴더를 만져야 한다.
 `themes` 폴더 구성을 보면 아래 이미지와 같이 되어 있다.
 
-![](/images/2024-10-16/theme.png)<br><br>
+![](/images/2024/10/16/theme.png)<br><br>
 
 우선 여기서 건드려야 할 건, `layout` 폴더와 `source`폴더이다.
 
 하기 전에, extensions 설치하면 보기 편하다.
 
-![](/images/2024-10-16/nunjucks.png)
+![](/images/2024/10/16/nunjucks.png)
 
-![](/images/2024-10-16/stylus.png)
+![](/images/2024/10/16/stylus.png)
 
 layout 폴더에 파일을 하나 생성한다. `allposts.njk` _(파일명은 아까 만든 페이지와 동일하도록 작성)_
 
-![](/images/2024-10-16/layout.png)
+![](/images/2024/10/16/layout.png)
 
 njk 문법은 처음이라 다른 파일 참고해가면서 원하는 레이아웃 구성으로 코딩해준다.
 
 css를 입히기 위해 source 폴더에도 파일을 생성해준다. `allposts.css`
 
-![](/images/2024-10-16/source.png)
+![](/images/2024/10/16/source.png)
 
 원하는 스타일에 맞게 스타일링 해준다.
 
@@ -113,12 +114,12 @@ css를 입히기 위해 source 폴더에도 파일을 생성해준다. `allposts
 <link rel="stylesheet" href="{{ url_for('css/custom/allposts.css') }}">
 ```
 
-![](/images/2024-10-16/link.png)
+![](/images/2024/10/16/link.png)
 
 여기까지 하면 기본적인 세팅은 완료이다.
 
 아래는 완성된 결과물이다.
 
-![](/images/2024-10-16/result.png)
+![](/images/2024/10/16/result.png)
 
 이상 끝 -!
